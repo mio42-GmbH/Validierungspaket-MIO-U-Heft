@@ -1,0 +1,523 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_CMR_Medication_Statement_Vitamine_K_Prophylaxis" />
+  <version value="1.0.0" />
+  <name value="KBV_PR_MIO_CMR_Medication_Statement_Vitamine_K_Prophylaxis" />
+  <status value="active" />
+  <date value="2020-11-30" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from Loinc (http://loinc.org). Loinc is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (Loinc) Committee and is available at no cost under the license at http://loinc.org/license. Loinc® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MedicationStatement" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationStatement" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="MedicationStatement">
+      <path value="MedicationStatement" />
+      <short value="Dieses Profil bildet die Vitamin K Prophylaxe ab." />
+      <constraint>
+        <key value="med-1" />
+        <severity value="error" />
+        <human value="Either free text or doseQuantity and route must exist" />
+        <expression value="dosage.text.empty().not() xor (dosage.route.empty().not() and dosage.doseAndRate.dose.empty().not())" />
+        <source value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_CMR_Medication_Statement_Vitamine_K_Prophylaxis" />
+      </constraint>
+    </element>
+    <element id="MedicationStatement.meta">
+      <path value="MedicationStatement.meta" />
+      <min value="1" />
+    </element>
+    <element id="MedicationStatement.meta.versionId">
+      <path value="MedicationStatement.meta.versionId" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.meta.lastUpdated">
+      <path value="MedicationStatement.meta.lastUpdated" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.meta.source">
+      <path value="MedicationStatement.meta.source" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.meta.profile">
+      <path value="MedicationStatement.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_CMR_Medication_Statement_Vitamine_K_Prophylaxis|1.0.0" />
+    </element>
+    <element id="MedicationStatement.meta.security">
+      <path value="MedicationStatement.meta.security" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.meta.tag">
+      <path value="MedicationStatement.meta.tag" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.implicitRules">
+      <path value="MedicationStatement.implicitRules" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.language">
+      <path value="MedicationStatement.language" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.contained">
+      <path value="MedicationStatement.contained" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.identifier">
+      <path value="MedicationStatement.identifier" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.basedOn">
+      <path value="MedicationStatement.basedOn" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.partOf">
+      <path value="MedicationStatement.partOf" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.status">
+      <path value="MedicationStatement.status" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_CMR_Medication_Statement_Status" />
+      </binding>
+    </element>
+    <element id="MedicationStatement.statusReason">
+      <path value="MedicationStatement.statusReason" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.category">
+      <path value="MedicationStatement.category" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.medication[x]">
+      <path value="MedicationStatement.medication[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept">
+      <path value="MedicationStatement.medication[x]" />
+      <sliceName value="medicationCodeableConcept" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding">
+      <path value="MedicationStatement.medication[x].coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding.system">
+      <path value="MedicationStatement.medication[x].coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding.version">
+      <path value="MedicationStatement.medication[x].coding.version" />
+      <min value="1" />
+      <fixedString value="http://snomed.info/sct/900000000000207008/version/20200731" />
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding.code">
+      <path value="MedicationStatement.medication[x].coding.code" />
+      <min value="1" />
+      <fixedCode value="66656000" />
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding.display">
+      <path value="MedicationStatement.medication[x].coding.display" />
+      <min value="1" />
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding.display.extension">
+      <path value="MedicationStatement.medication[x].coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding.display.extension:anzeigenameMedicationSnomed">
+      <path value="MedicationStatement.medication[x].coding.display.extension" />
+      <sliceName value="anzeigenameMedicationSnomed" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding.display.extension:anzeigenameMedicationSnomed.extension">
+      <path value="MedicationStatement.medication[x].coding.display.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding.display.extension:anzeigenameMedicationSnomed.extension:content">
+      <path value="MedicationStatement.medication[x].coding.display.extension.extension" />
+      <sliceName value="content" />
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding.display.extension:anzeigenameMedicationSnomed.extension:content.value[x]">
+      <path value="MedicationStatement.medication[x].coding.display.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding.display.extension:anzeigenameMedicationSnomed.extension:content.value[x]:valueString">
+      <path value="MedicationStatement.medication[x].coding.display.extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <min value="1" />
+      <fixedString value="Vitamin-K" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding.userSelected">
+      <path value="MedicationStatement.medication[x].coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.text">
+      <path value="MedicationStatement.medication[x].text" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.subject">
+      <path value="MedicationStatement.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_CMR_Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.subject.reference">
+      <path value="MedicationStatement.subject.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.subject.type">
+      <path value="MedicationStatement.subject.type" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.subject.identifier">
+      <path value="MedicationStatement.subject.identifier" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.subject.display">
+      <path value="MedicationStatement.subject.display" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.context">
+      <path value="MedicationStatement.context" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_CMR_Encounter|1.0.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.context.reference">
+      <path value="MedicationStatement.context.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.context.type">
+      <path value="MedicationStatement.context.type" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.context.identifier">
+      <path value="MedicationStatement.context.identifier" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.context.display">
+      <path value="MedicationStatement.context.display" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.effective[x]">
+      <path value="MedicationStatement.effective[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.effective[x]:effectiveDateTime">
+      <path value="MedicationStatement.effective[x]" />
+      <sliceName value="effectiveDateTime" />
+      <min value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dateAsserted">
+      <path value="MedicationStatement.dateAsserted" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.informationSource">
+      <path value="MedicationStatement.informationSource" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.derivedFrom">
+      <path value="MedicationStatement.derivedFrom" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.reasonCode">
+      <path value="MedicationStatement.reasonCode" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.reasonReference">
+      <path value="MedicationStatement.reasonReference" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.note">
+      <path value="MedicationStatement.note" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage">
+      <path value="MedicationStatement.dosage" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.sequence">
+      <path value="MedicationStatement.dosage.sequence" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.text">
+      <path value="MedicationStatement.dosage.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.additionalInstruction">
+      <path value="MedicationStatement.dosage.additionalInstruction" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.patientInstruction">
+      <path value="MedicationStatement.dosage.patientInstruction" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.timing">
+      <path value="MedicationStatement.dosage.timing" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.asNeeded[x]">
+      <path value="MedicationStatement.dosage.asNeeded[x]" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.site">
+      <path value="MedicationStatement.dosage.site" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.route">
+      <path value="MedicationStatement.dosage.route" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.route.coding">
+      <path value="MedicationStatement.dosage.route.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.route.coding.system">
+      <path value="MedicationStatement.dosage.route.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="MedicationStatement.dosage.route.coding.version">
+      <path value="MedicationStatement.dosage.route.coding.version" />
+      <min value="1" />
+      <fixedString value="http://snomed.info/sct/900000000000207008/version/20200731" />
+    </element>
+    <element id="MedicationStatement.dosage.route.coding.code">
+      <path value="MedicationStatement.dosage.route.coding.code" />
+      <min value="1" />
+      <fixedCode value="26643006" />
+    </element>
+    <element id="MedicationStatement.dosage.route.coding.display">
+      <path value="MedicationStatement.dosage.route.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="MedicationStatement.dosage.route.coding.display.extension">
+      <path value="MedicationStatement.dosage.route.coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationStatement.dosage.route.coding.display.extension:anzeigenameRouteSnomed">
+      <path value="MedicationStatement.dosage.route.coding.display.extension" />
+      <sliceName value="anzeigenameRouteSnomed" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.route.coding.display.extension:anzeigenameRouteSnomed.extension">
+      <path value="MedicationStatement.dosage.route.coding.display.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationStatement.dosage.route.coding.display.extension:anzeigenameRouteSnomed.extension:content">
+      <path value="MedicationStatement.dosage.route.coding.display.extension.extension" />
+      <sliceName value="content" />
+    </element>
+    <element id="MedicationStatement.dosage.route.coding.display.extension:anzeigenameRouteSnomed.extension:content.value[x]">
+      <path value="MedicationStatement.dosage.route.coding.display.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.route.coding.display.extension:anzeigenameRouteSnomed.extension:content.value[x]:valueString">
+      <path value="MedicationStatement.dosage.route.coding.display.extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <min value="1" />
+      <fixedString value="oral" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.route.coding.userSelected">
+      <path value="MedicationStatement.dosage.route.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.route.text">
+      <path value="MedicationStatement.dosage.route.text" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.method">
+      <path value="MedicationStatement.dosage.method" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.doseAndRate">
+      <path value="MedicationStatement.dosage.doseAndRate" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.doseAndRate.type">
+      <path value="MedicationStatement.dosage.doseAndRate.type" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.doseAndRate.dose[x]">
+      <path value="MedicationStatement.dosage.doseAndRate.dose[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+      <type>
+        <code value="Quantity" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.doseAndRate.dose[x]:doseQuantity">
+      <path value="MedicationStatement.dosage.doseAndRate.dose[x]" />
+      <sliceName value="doseQuantity" />
+      <min value="1" />
+      <type>
+        <code value="Quantity" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.doseAndRate.dose[x]:doseQuantity.value">
+      <path value="MedicationStatement.dosage.doseAndRate.dose[x].value" />
+      <min value="1" />
+      <fixedDecimal value="2" />
+    </element>
+    <element id="MedicationStatement.dosage.doseAndRate.dose[x]:doseQuantity.unit">
+      <path value="MedicationStatement.dosage.doseAndRate.dose[x].unit" />
+      <min value="1" />
+      <fixedString value="mg" />
+    </element>
+    <element id="MedicationStatement.dosage.doseAndRate.dose[x]:doseQuantity.system">
+      <path value="MedicationStatement.dosage.doseAndRate.dose[x].system" />
+      <min value="1" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="MedicationStatement.dosage.doseAndRate.dose[x]:doseQuantity.code">
+      <path value="MedicationStatement.dosage.doseAndRate.dose[x].code" />
+      <min value="1" />
+      <fixedCode value="mg" />
+    </element>
+    <element id="MedicationStatement.dosage.doseAndRate.rate[x]">
+      <path value="MedicationStatement.dosage.doseAndRate.rate[x]" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.maxDosePerPeriod">
+      <path value="MedicationStatement.dosage.maxDosePerPeriod" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.maxDosePerAdministration">
+      <path value="MedicationStatement.dosage.maxDosePerAdministration" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.maxDosePerLifetime">
+      <path value="MedicationStatement.dosage.maxDosePerLifetime" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

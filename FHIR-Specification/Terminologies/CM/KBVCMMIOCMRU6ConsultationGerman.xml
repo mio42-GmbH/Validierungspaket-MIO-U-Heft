@@ -1,0 +1,105 @@
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/ConceptMap/KBV_CM_MIO_CMR_U6_Consultation_German" />
+  <version value="1.0.0" />
+  <name value="KBV_CM_MIO_CMR_U6_Consultation_German" />
+  <title value="U6 - Beratung" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2020-11-30" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://www.kbv.de" />
+    </telecom>
+  </contact>
+  <description value="Diese Conceptmap verknüpft die Codes für U6 - Beratung mit deutschen Bezeichnungen" />
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE." />
+  <group>
+    <source value="http://snomed.info/sct" />
+    <sourceVersion value="http://snomed.info/sct/900000000000207008/version/20200731" />
+    <target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_CMR_U6_Consultation_German" />
+    <targetVersion value="1.0.0" />
+    <element>
+      <code value="441041000124100" />
+      <display value="Counseling about nutrition (procedure)" />
+      <target>
+        <code value="Ernaehrung" />
+        <display value="Ernährung" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="409066002:{363702006=444069008,363702006=426482000}" />
+      <display value="Education, guidance and counseling (procedure) : Has focus (attribute) = Administration of Vitamin D supplement (procedure) , Has focus (attribute) = Prevention of dental caries (procedure) }" />
+      <target>
+        <code value="RachitisprophylaxemittelsVitaminDundKariesprophylaxemittelsFluorid" />
+        <display value="Rachitisprophylaxe mittels Vitamin D und Kariesprophylaxe mittels Fluorid" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="424673000" />
+      <display value="Community resources education, guidance and counseling (procedure)" />
+      <target>
+        <code value="InformationenzuregionalenUnterstuetzungsangebotenzBElternKindHilfenFrueheHilfen" />
+        <display value="Informationen zu regionalen Unterstützungsangeboten (z. B. Eltern-Kind-Hilfen, Frühe Hilfen)" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="409059003" />
+      <display value="Safety education, guidance, and counseling (procedure)" />
+      <target>
+        <code value="Unfallverhuetung" />
+        <display value="Unfallverhütung" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="702971000" />
+      <display value="Counseling for childhood immunization (procedure)" />
+      <target>
+        <code value="AufklaerungueberImpfungenVorschlageinesImpfterminsImpfstatusentsprechendSchutzimpfungsRichtliniedesGBAueberpruefen" />
+        <display value="Aufklärung über Impfungen/Vorschlag eines Impftermins, Impfstatus entsprechend Schutzimpfungs-Richtlinie des G-BA überprüfen" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="243085009" />
+      <display value="Oral health education (procedure)" />
+      <target>
+        <code value="HinweisezuMundhygieneZahnpflegeundzahnschonenderErnaehrung" />
+        <display value="Hinweise zu Mundhygiene (Zahnpflege) und zahnschonender Ernährung" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="424308004" />
+      <display value="Speech and language therapy education, guidance, and counseling (procedure)" />
+      <target>
+        <code value="SprachberatungFoerderungvonMutterspracheunddeutscherSpracheeinschliesslichderLautundGebaerdensprache" />
+        <display value="Sprachberatung: Förderung von „Muttersprache“ und deutscher Sprache (einschließlich der Laut- und Gebärdensprache)" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="274410002" />
+      <display value="Dental referral - child (procedure)" />
+      <target>
+        <code value="VerweiszumZahnarztzurZahnaerztinzurAbklaerungvonAuffaelligkeitenanZaehnenundSchleimhaut" />
+        <display value="Verweis zum Zahnarzt / zur Zahnärztin zur Abklärung von Auffälligkeiten an Zähnen und Schleimhaut" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="408935001" />
+      <display value="Substance abuse prevention education (procedure)" />
+      <target>
+        <code value="Sucht" />
+        <display value="Sucht" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+  </group>
+</ConceptMap>

@@ -1,0 +1,105 @@
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/ConceptMap/KBV_CM_MIO_PC_PN_Examination_Number_German" />
+  <version value="1.0.0" />
+  <name value="KBV_CM_MIO_PC_PN_Examination_Number_German" />
+  <title value="Untersuchungsnummer Teilnahmekarte" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2020-11-30" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://www.kbv.de" />
+    </telecom>
+  </contact>
+  <description value="Diese Conceptmap verknüpft die Codes für Untersuchungsnummer Teilnahmekarte mit deutschen Bezeichnungen" />
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE." />
+  <group>
+    <source value="http://snomed.info/sct" />
+    <sourceVersion value="http://snomed.info/sct/900000000000207008/version/20200731" />
+    <target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_PC_PN_Examination_Number_German" />
+    <targetVersion value="1.0.0" />
+    <element>
+      <code value="170107008" />
+      <display value="Child examination - 10 days (procedure)" />
+      <target>
+        <code value="U2310Lebenstag" />
+        <display value="U2 3.-10. Lebenstag" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="243788004:370131001=133931009" />
+      <display value="Child examination (procedure) : Recipient category =  Infant (person)" />
+      <target>
+        <code value="U345Lebenswoche" />
+        <display value="U3 4.-5. Lebenswoche" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="170250008" />
+      <display value="Child 3 month examination (procedure)" />
+      <target>
+        <code value="U434Lebensmonat" />
+        <display value="U4 3.-4. Lebensmonat" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="170263002" />
+      <display value="Child 6 month examination (procedure)" />
+      <target>
+        <code value="U567Lebensmonat" />
+        <display value="U5 6.-7. Lebensmonat" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="170254004" />
+      <display value="Child 1 year examination (procedure)" />
+      <target>
+        <code value="U61012Lebensmonat" />
+        <display value="U6 10.-12. Lebensmonat" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="401140000" />
+      <display value="Child 2 year examination (procedure)" />
+      <target>
+        <code value="U72124Lebensmonat" />
+        <display value="U7 21.-24. Lebensmonat" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="170281004" />
+      <display value="Child 3 year examination (procedure)" />
+      <target>
+        <code value="U7a3436Lebensmonat" />
+        <display value="U7a 34.-36. Lebensmonat" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="410635005" />
+      <display value="Child 4 year examination (procedure)" />
+      <target>
+        <code value="U84648Lebensmonat" />
+        <display value="U8 46.-48. Lebensmonat" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="243788004:370131001=410602000" />
+      <display value="Child examination (procedure) : Recipient category (attribute) =  Preschool child (person)" />
+      <target>
+        <code value="U96064Lebensmonat" />
+        <display value="U9 60.-64.Lebensmonat" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+  </group>
+</ConceptMap>

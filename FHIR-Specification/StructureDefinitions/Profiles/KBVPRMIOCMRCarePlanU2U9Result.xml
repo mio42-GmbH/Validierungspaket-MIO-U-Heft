@@ -1,0 +1,607 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_CMR_Care_Plan_U2_U9_Result" />
+  <version value="1.0.0" />
+  <name value="KBV_PR_MIO_CMR_Care_Plan_U2_U9_Result" />
+  <status value="active" />
+  <date value="2020-11-30" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from Loinc (http://loinc.org). Loinc is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (Loinc) Committee and is available at no cost under the license at http://loinc.org/license. Loinc® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="CarePlan" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="CarePlan">
+      <path value="CarePlan" />
+      <short value="Dieses Profil bezieht sich auf den Ergebnisteil der Kindervorsorgeuntersuchungen U2 bis U9 und umfasst die Informationen zu den vereinbarten weiteren Maßnahmen und den zu beobachtenden Auffälligkeiten." />
+    </element>
+    <element id="CarePlan.meta">
+      <path value="CarePlan.meta" />
+      <min value="1" />
+    </element>
+    <element id="CarePlan.meta.versionId">
+      <path value="CarePlan.meta.versionId" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.meta.lastUpdated">
+      <path value="CarePlan.meta.lastUpdated" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.meta.source">
+      <path value="CarePlan.meta.source" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.meta.profile">
+      <path value="CarePlan.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_CMR_Care_Plan_U2_U9_Result|1.0.0" />
+    </element>
+    <element id="CarePlan.meta.security">
+      <path value="CarePlan.meta.security" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.meta.tag">
+      <path value="CarePlan.meta.tag" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.implicitRules">
+      <path value="CarePlan.implicitRules" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.language">
+      <path value="CarePlan.language" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.contained">
+      <path value="CarePlan.contained" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.identifier">
+      <path value="CarePlan.identifier" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.instantiatesCanonical">
+      <path value="CarePlan.instantiatesCanonical" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.instantiatesUri">
+      <path value="CarePlan.instantiatesUri" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.basedOn">
+      <path value="CarePlan.basedOn" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.replaces">
+      <path value="CarePlan.replaces" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.partOf">
+      <path value="CarePlan.partOf" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.status">
+      <path value="CarePlan.status" />
+      <fixedCode value="completed" />
+    </element>
+    <element id="CarePlan.intent">
+      <path value="CarePlan.intent" />
+      <fixedCode value="proposal" />
+    </element>
+    <element id="CarePlan.category">
+      <path value="CarePlan.category" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.title">
+      <path value="CarePlan.title" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.description">
+      <path value="CarePlan.description" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.subject">
+      <path value="CarePlan.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_CMR_Patient|1.0.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.subject.reference">
+      <path value="CarePlan.subject.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.subject.type">
+      <path value="CarePlan.subject.type" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.subject.identifier">
+      <path value="CarePlan.subject.identifier" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.subject.display">
+      <path value="CarePlan.subject.display" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.encounter">
+      <path value="CarePlan.encounter" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_CMR_Encounter|1.0.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.encounter.reference">
+      <path value="CarePlan.encounter.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.encounter.type">
+      <path value="CarePlan.encounter.type" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.encounter.identifier">
+      <path value="CarePlan.encounter.identifier" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.encounter.display">
+      <path value="CarePlan.encounter.display" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.period">
+      <path value="CarePlan.period" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.created">
+      <path value="CarePlan.created" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.author">
+      <path value="CarePlan.author" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_CMR_Practitioner|1.0.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.author.reference">
+      <path value="CarePlan.author.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.author.type">
+      <path value="CarePlan.author.type" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.author.identifier">
+      <path value="CarePlan.author.identifier" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.author.display">
+      <path value="CarePlan.author.display" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.contributor">
+      <path value="CarePlan.contributor" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.careTeam">
+      <path value="CarePlan.careTeam" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.addresses">
+      <path value="CarePlan.addresses" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.supportingInfo">
+      <path value="CarePlan.supportingInfo" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.goal">
+      <path value="CarePlan.goal" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity">
+      <path value="CarePlan.activity" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="detail.code.coding.code" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+      <max value="2" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart">
+      <path value="CarePlan.activity" />
+      <sliceName value="weitereMassnahmenVereinbart" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.outcomeCodeableConcept">
+      <path value="CarePlan.activity.outcomeCodeableConcept" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.outcomeReference">
+      <path value="CarePlan.activity.outcomeReference" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.progress">
+      <path value="CarePlan.activity.progress" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.reference">
+      <path value="CarePlan.activity.reference" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail">
+      <path value="CarePlan.activity.detail" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.kind">
+      <path value="CarePlan.activity.detail.kind" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.instantiatesCanonical">
+      <path value="CarePlan.activity.detail.instantiatesCanonical" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.instantiatesUri">
+      <path value="CarePlan.activity.detail.instantiatesUri" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.code">
+      <path value="CarePlan.activity.detail.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.code.coding">
+      <path value="CarePlan.activity.detail.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.code.coding.system">
+      <path value="CarePlan.activity.detail.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.code.coding.version">
+      <path value="CarePlan.activity.detail.code.coding.version" />
+      <min value="1" />
+      <fixedString value="http://snomed.info/sct/900000000000207008/version/20200731" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.code.coding.code">
+      <path value="CarePlan.activity.detail.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="722448004" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.code.coding.display">
+      <path value="CarePlan.activity.detail.code.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.code.coding.display.extension">
+      <path value="CarePlan.activity.detail.code.coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.code.coding.display.extension:anzeigenameActivityWeitereMassnahmenVereinbartSnomed">
+      <path value="CarePlan.activity.detail.code.coding.display.extension" />
+      <sliceName value="anzeigenameActivityWeitereMassnahmenVereinbartSnomed" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.code.coding.display.extension:anzeigenameActivityWeitereMassnahmenVereinbartSnomed.extension">
+      <path value="CarePlan.activity.detail.code.coding.display.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.code.coding.display.extension:anzeigenameActivityWeitereMassnahmenVereinbartSnomed.extension:content">
+      <path value="CarePlan.activity.detail.code.coding.display.extension.extension" />
+      <sliceName value="content" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.code.coding.display.extension:anzeigenameActivityWeitereMassnahmenVereinbartSnomed.extension:content.value[x]">
+      <path value="CarePlan.activity.detail.code.coding.display.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.code.coding.display.extension:anzeigenameActivityWeitereMassnahmenVereinbartSnomed.extension:content.value[x]:valueString">
+      <path value="CarePlan.activity.detail.code.coding.display.extension.extension.value[x]" />
+      <sliceName value="valueString" />
+      <min value="1" />
+      <fixedString value="weitere Maßnahmen vereinbart:" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.code.coding.userSelected">
+      <path value="CarePlan.activity.detail.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.code.text">
+      <path value="CarePlan.activity.detail.code.text" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.reasonCode">
+      <path value="CarePlan.activity.detail.reasonCode" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.reasonReference">
+      <path value="CarePlan.activity.detail.reasonReference" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.goal">
+      <path value="CarePlan.activity.detail.goal" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.statusReason">
+      <path value="CarePlan.activity.detail.statusReason" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.doNotPerform">
+      <path value="CarePlan.activity.detail.doNotPerform" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.scheduled[x]">
+      <path value="CarePlan.activity.detail.scheduled[x]" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.location">
+      <path value="CarePlan.activity.detail.location" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.performer">
+      <path value="CarePlan.activity.detail.performer" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.product[x]">
+      <path value="CarePlan.activity.detail.product[x]" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.dailyAmount">
+      <path value="CarePlan.activity.detail.dailyAmount" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.quantity">
+      <path value="CarePlan.activity.detail.quantity" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:weitereMassnahmenVereinbart.detail.description">
+      <path value="CarePlan.activity.detail.description" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung">
+      <path value="CarePlan.activity" />
+      <sliceName value="auffaelligkeitenZurBeobachtung" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.outcomeCodeableConcept">
+      <path value="CarePlan.activity.outcomeCodeableConcept" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.outcomeReference">
+      <path value="CarePlan.activity.outcomeReference" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.progress">
+      <path value="CarePlan.activity.progress" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.reference">
+      <path value="CarePlan.activity.reference" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail">
+      <path value="CarePlan.activity.detail" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.kind">
+      <path value="CarePlan.activity.detail.kind" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.instantiatesCanonical">
+      <path value="CarePlan.activity.detail.instantiatesCanonical" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.instantiatesUri">
+      <path value="CarePlan.activity.detail.instantiatesUri" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.code">
+      <path value="CarePlan.activity.detail.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.code.coding">
+      <path value="CarePlan.activity.detail.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.code.coding.system">
+      <path value="CarePlan.activity.detail.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.code.coding.version">
+      <path value="CarePlan.activity.detail.code.coding.version" />
+      <min value="1" />
+      <fixedString value="http://snomed.info/sct/900000000000207008/version/20200731" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.code.coding.code">
+      <path value="CarePlan.activity.detail.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="271906008" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.code.coding.display">
+      <path value="CarePlan.activity.detail.code.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.code.coding.display.extension">
+      <path value="CarePlan.activity.detail.code.coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.code.coding.display.extension:anzeigenameActivityAuffaelligkeitenZurBeobachtungSnomed">
+      <path value="CarePlan.activity.detail.code.coding.display.extension" />
+      <sliceName value="anzeigenameActivityAuffaelligkeitenZurBeobachtungSnomed" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.code.coding.display.extension:anzeigenameActivityAuffaelligkeitenZurBeobachtungSnomed.extension">
+      <path value="CarePlan.activity.detail.code.coding.display.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.code.coding.display.extension:anzeigenameActivityAuffaelligkeitenZurBeobachtungSnomed.extension:content">
+      <path value="CarePlan.activity.detail.code.coding.display.extension.extension" />
+      <sliceName value="content" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.code.coding.display.extension:anzeigenameActivityAuffaelligkeitenZurBeobachtungSnomed.extension:content.value[x]">
+      <path value="CarePlan.activity.detail.code.coding.display.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.code.coding.display.extension:anzeigenameActivityAuffaelligkeitenZurBeobachtungSnomed.extension:content.value[x]:valueString">
+      <path value="CarePlan.activity.detail.code.coding.display.extension.extension.value[x]" />
+      <sliceName value="valueString" />
+      <min value="1" />
+      <fixedString value="Auffälligkeiten zur Beobachtung:" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.code.coding.userSelected">
+      <path value="CarePlan.activity.detail.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.code.text">
+      <path value="CarePlan.activity.detail.code.text" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.reasonCode">
+      <path value="CarePlan.activity.detail.reasonCode" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.reasonReference">
+      <path value="CarePlan.activity.detail.reasonReference" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.goal">
+      <path value="CarePlan.activity.detail.goal" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.statusReason">
+      <path value="CarePlan.activity.detail.statusReason" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.doNotPerform">
+      <path value="CarePlan.activity.detail.doNotPerform" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.scheduled[x]">
+      <path value="CarePlan.activity.detail.scheduled[x]" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.location">
+      <path value="CarePlan.activity.detail.location" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.performer">
+      <path value="CarePlan.activity.detail.performer" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.product[x]">
+      <path value="CarePlan.activity.detail.product[x]" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.dailyAmount">
+      <path value="CarePlan.activity.detail.dailyAmount" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.quantity">
+      <path value="CarePlan.activity.detail.quantity" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.activity:auffaelligkeitenZurBeobachtung.detail.description">
+      <path value="CarePlan.activity.detail.description" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.note">
+      <path value="CarePlan.note" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

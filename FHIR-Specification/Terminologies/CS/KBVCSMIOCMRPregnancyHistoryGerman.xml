@@ -1,0 +1,68 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_CMR_Pregnancy_History_German" />
+  <version value="1.0.0" />
+  <name value="KBV_CS_MIO_CMR_Pregnancy_History_German" />
+  <title value="Schwangerschaftsanamnese" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2020-11-30" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://www.kbv.de" />
+    </telecom>
+  </contact>
+  <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Schwangerschaftsanamnese." />
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE." />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="Gestationsdiabetes" />
+    <display value="Gestationsdiabetes" />
+  </concept>
+  <concept>
+    <code value="Diabetesmellitus" />
+    <display value="Diabetes mellitus" />
+  </concept>
+  <concept>
+    <code value="Dauermedikation" />
+    <display value="Dauermedikation" />
+  </concept>
+  <concept>
+    <code value="akuteoderchronischeInfektioneninderSchwangerschaft" />
+    <display value="akute oder chronische Infektionen in der Schwangerschaft" />
+  </concept>
+  <concept>
+    <code value="AntikoerperSuchtestpositiv" />
+    <display value="Antikörper-Suchtest positiv" />
+  </concept>
+  <concept>
+    <code value="BStreptokokkenStatusderMutterpositiv" />
+    <display value="B-Streptokokken-Status der Mutter positiv" />
+  </concept>
+  <concept>
+    <code value="Mehrlingsschwangerschaft" />
+    <display value="Mehrlingsschwangerschaft" />
+  </concept>
+  <concept>
+    <code value="PolyHydramnion" />
+    <display value="(Poly-)Hydramnion" />
+  </concept>
+  <concept>
+    <code value="Oligohydramnion" />
+    <display value="Oligohydramnion" />
+  </concept>
+  <concept>
+    <code value="besonderepsychischeBelastungen" />
+    <display value="besondere psychische Belastungen" />
+  </concept>
+  <concept>
+    <code value="besonderesozialeBelastungen" />
+    <display value="besondere soziale Belastungen" />
+  </concept>
+  <concept>
+    <code value="Abusus" />
+    <display value="Abusus" />
+  </concept>
+</CodeSystem>

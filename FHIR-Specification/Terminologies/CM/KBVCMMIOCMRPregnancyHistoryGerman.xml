@@ -1,0 +1,132 @@
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/ConceptMap/KBV_CM_MIO_CMR_Pregnancy_History_German" />
+  <version value="1.0.0" />
+  <name value="KBV_CM_MIO_CMR_Pregnancy_History_German" />
+  <title value="Schwangerschaftsanamnese" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2020-11-30" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://www.kbv.de" />
+    </telecom>
+  </contact>
+  <description value="Diese Conceptmap verknüpft die Codes für Schwangerschaftsanamnese mit deutschen Bezeichnungen" />
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE." />
+  <group>
+    <source value="http://snomed.info/sct" />
+    <sourceVersion value="http://snomed.info/sct/900000000000207008/version/20200731" />
+    <target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_CMR_Pregnancy_History_German" />
+    <targetVersion value="1.0.0" />
+    <element>
+      <code value="721151003" />
+      <display value="Maternal history of gestational diabetes (situation)" />
+      <target>
+        <code value="Gestationsdiabetes" />
+        <display value="Gestationsdiabetes" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="704144000" />
+      <display value="Maternal history of diabetes mellitus (situation)" />
+      <target>
+        <code value="Diabetesmellitus" />
+        <display value="Diabetes mellitus" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="417451006+410684002:{408731000=410512000,363589002=416608005,408730004=410525008,408732007=444301002}" />
+      <display value="Procedure needed (situation) + Drug therapy status (situation) : { Temporal context (attribute) = Current or specified time (qualifier value) , Associated procedure (attribute) = Drug therapy (procedure) , Procedure context (attribute) = Needed (qualifier value) , Subject relationship context (attribute) = Mother of subject (person) }" />
+      <target>
+        <code value="Dauermedikation" />
+        <display value="Dauermedikation" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="160427003:246090004=40609001" />
+      <display value="Family history with explicit context pertaining to mother (situation) : Associated finding (attribute) = Infectious disease in mother complicating pregnancy, childbirth AND/OR puerperium (disorder)" />
+      <target>
+        <code value="akuteoderchronischeInfektioneninderSchwangerschaft" />
+        <display value="akute oder chronische Infektionen in der Schwangerschaft" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="160427003:246090004=165775009" />
+      <display value="Family history with explicit context pertaining to mother (situation) : Associated finding (attribute) = Indirect Coombs test positive (finding)" />
+      <target>
+        <code value="AntikoerperSuchtestpositiv" />
+        <display value="Antikörper-Suchtest positiv" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="160427003:246090004=120001000119107" />
+      <display value="Family history with explicit context pertaining to mother (situation) : Associated finding (attribute) = Group B streptococcus infection in mother complicating childbirth (disorder)" />
+      <target>
+        <code value="BStreptokokkenStatusderMutterpositiv" />
+        <display value="B-Streptokokken-Status der Mutter positiv" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="160427003:246090004=16356006" />
+      <display value="Family history with explicit context pertaining to mother (situation) : Associated finding (attribute) = Multiple pregnancy (disorder)" />
+      <target>
+        <code value="Mehrlingsschwangerschaft" />
+        <display value="Mehrlingsschwangerschaft" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="413350009:{246090004=199646006,408732007=444301002}" />
+      <display value="Finding with explicit context (situation) : { Associated finding (attribute) = Polyhydramnios - delivered (disorder), Subject relationship context (attribute) = Mother of subject (person) }" />
+      <target>
+        <code value="PolyHydramnion" />
+        <display value="(Poly-)Hydramnion" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="413350009:{246090004=59566000,408732007=444301002}" />
+      <display value="Finding with explicit context (situation) : { Associated finding (attribute) = Oligohydramnios (disorder), Subject relationship context (attribute) = Mother of subject (person) }" />
+      <target>
+        <code value="Oligohydramnion" />
+        <display value="Oligohydramnion" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="288256007" />
+      <display value="History of maternal psychiatric problem (situation)" />
+      <target>
+        <code value="besonderepsychischeBelastungen" />
+        <display value="besondere psychische Belastungen" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="413350009:{246090004=284465006,408732007=444301002}" />
+      <display value="Finding with explicit context (situation) : { Associated finding (attribute) = Finding relating to psychosocial functioning (finding), Subject relationship context (attribute) = Mother of subject (person) }" />
+      <target>
+        <code value="besonderesozialeBelastungen" />
+        <display value="besondere soziale Belastungen" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="442080007" />
+      <display value="Drug misuse by mother (situation)" />
+      <target>
+        <code value="Abusus" />
+        <display value="Abusus" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+  </group>
+</ConceptMap>
