@@ -1,0 +1,204 @@
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="84ffe938-c0b2-4da2-bf0f-086b8b50f26c" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_PN_Bundle|1.0.1" />
+	</meta>
+	<identifier>
+		<system value="urn:ietf:rfc:3937" />
+		<value value="urn:uuid:84ffe938-c0b2-4da2-bf0f-086b8b50f26c" />
+	</identifier>
+	<type value="document" />
+	<timestamp value="2021-05-14T09:41:02Z" />
+	<entry>
+		<fullUrl value="urn:uuid:639dfb06-6e0a-4760-874d-ebd4944902de" />
+		<resource>
+			<Composition>
+				<id value="639dfb06-6e0a-4760-874d-ebd4944902de" />
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_PC_Composition_Examination_Participation|1.0.1" />
+				</meta>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_CMR_Note">
+					<valueString value="Liebe Eltern! Schützen Sie die Daten Ihres Kindes! Mit dieser herausnehmbaren Karte können Sie bei Behörden, Kindertragesstätten, Schulen und Jugendämtern den Nachweis erbringen, dass Ihr Kind an den Untersuchungen teilgenommen hat." />
+				</extension>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_CMR_Instruction">
+					<valueString value="* Die Untersuchung beinhaltet eine ärztliche Beratung in Bezug auf einen vollständigeen altersgemäßen, entsprechend der Schutzimpfungs-Richtlinie des G-BA ausreichenden Impfschutz." />
+				</extension>
+				<status value="final" />
+				<type>
+					<coding>
+						<system value="http://snomed.info/sct" />
+						<version value="http://snomed.info/sct/900000000000207008/version/20210131" />
+						<code value="314845004" />
+						<display value="Patient participation status (finding)" />
+					</coding>
+				</type>
+				<subject>
+					<reference value="urn:uuid:2cd11850-536d-4dca-8b7d-12f6c4fc204f" />
+				</subject>
+				<encounter>
+					<reference value="urn:uuid:2e20e9b0-011d-4f2a-9233-1f85347a266b" />
+				</encounter>
+				<date value="2019-12-15" />
+				<author>
+					<reference value="urn:uuid:43676765-7eec-480d-b564-d40ff7b2b161" />
+				</author>
+				<title value="Teilnahmekarte" />
+			</Composition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:43676765-7eec-480d-b564-d40ff7b2b161" />
+		<resource>
+			<Practitioner>
+				<id value="43676765-7eec-480d-b564-d40ff7b2b161" />
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_CMR_Practitioner|1.0.1" />
+				</meta>
+				<identifier>
+					<type>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+							<code value="LANR" />
+							<display value="Lifelong physician number" />
+						</coding>
+					</type>
+					<system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR" />
+					<value value="456456456" />
+				</identifier>
+				<name>
+					<use value="official" />
+					<text value="Dr. med Klaus Kindlieb" />
+					<family value="Kindlieb">
+						<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+							<valueString value="Kindlieb" />
+						</extension>
+					</family>
+					<given value="Klaus" />
+					<prefix value="Dr. med.">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+							<valueCode value="AC" />
+						</extension>
+					</prefix>
+				</name>
+				<telecom>
+					<system value="phone" />
+					<value value="142/23643754" />
+				</telecom>
+				<address>
+					<type value="both" />
+					<line value="Lindenallee 4">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+							<valueString value="Lindenallee" />
+						</extension>
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+							<valueString value="4" />
+						</extension>
+					</line>
+					<city value="Kleinstadt" />
+					<postalCode value="12425" />
+					<country value="D" />
+				</address>
+				<qualification>
+					<code>
+						<coding>
+							<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO" />
+							<version value="1.15" />
+							<code value="341" />
+							<display value="FA Kinder-und Jugendmedizin">
+								<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+									<extension url="content">
+										<valueString value="FA Kinder-und Jugendmedizin" />
+									</extension>
+								</extension>
+							</display>
+						</coding>
+					</code>
+				</qualification>
+			</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:2cd11850-536d-4dca-8b7d-12f6c4fc204f" />
+		<resource>
+			<Patient>
+				<id value="2cd11850-536d-4dca-8b7d-12f6c4fc204f" />
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_CMR_Patient|1.0.1" />
+				</meta>
+				<identifier>
+					<type>
+						<coding>
+							<system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+							<code value="GKV" />
+							<display value="Gesetzliche Krankenversicherung" />
+						</coding>
+					</type>
+					<system value="http://fhir.de/NamingSystem/gkv/kvid-10" />
+					<value value="E123456789" />
+				</identifier>
+				<name>
+					<use value="official" />
+					<text value="Emilia Glücklich" />
+					<family value="Glücklich">
+						<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+							<valueString value="Glücklich" />
+						</extension>
+					</family>
+					<given value="Emilia" />
+				</name>
+				<birthDate value="2016-09-27" />
+			</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:2e20e9b0-011d-4f2a-9233-1f85347a266b" />
+		<resource>
+			<Encounter>
+				<id value="2e20e9b0-011d-4f2a-9233-1f85347a266b" />
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_PC_Encounter|1.0.1" />
+				</meta>
+				<status value="finished" />
+				<class>
+					<system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+					<version value="2.0.0" />
+					<code value="AMB" />
+					<display value="ambulatory" />
+				</class>
+				<type>
+					<coding>
+						<system value="http://snomed.info/sct" />
+						<version value="http://snomed.info/sct/900000000000207008/version/20210131" />
+						<code value="170263002" />
+						<display value="Child 6 month examination (procedure)">
+							<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+								<extension url="content">
+									<valueString value="U4" />
+								</extension>
+							</extension>
+						</display>
+					</coding>
+				</type>
+				<subject>
+					<reference value="urn:uuid:2cd11850-536d-4dca-8b7d-12f6c4fc204f" />
+				</subject>
+				<participant>
+					<type>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
+							<version value="2.0.0" />
+							<code value="PPRF" />
+							<display value="primary performer" />
+						</coding>
+					</type>
+					<individual>
+						<reference value="urn:uuid:43676765-7eec-480d-b564-d40ff7b2b161" />
+					</individual>
+				</participant>
+				<period>
+					<start value="2016-12-15" />
+				</period>
+			</Encounter>
+		</resource>
+	</entry>
+</Bundle>

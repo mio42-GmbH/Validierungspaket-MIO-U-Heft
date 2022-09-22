@@ -1,0 +1,164 @@
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="29e2b3ca-2cbe-4211-ae59-2036026148d5" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_PN_Bundle|1.0.1" />
+	</meta>
+	<identifier>
+		<system value="urn:ietf:rfc:3938" />
+		<value value="urn:uuid:29e2b3ca-2cbe-4211-ae59-2036026148d5" />
+	</identifier>
+	<type value="document" />
+	<timestamp value="2021-05-14T09:41:02Z" />
+	<entry>
+		<fullUrl value="urn:uuid:e2286279-82c2-4deb-8c5b-e29edf8ecb97" />
+		<resource>
+			<Composition>
+				<id value="e2286279-82c2-4deb-8c5b-e29edf8ecb97" />
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_PN_Composition_Parental_Notes|1.0.1" />
+				</meta>
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment">
+					<valueString value="Tipp: Ist Ihnen bei Ihrem Baby etwas aufgefallen, das Sie ungewöhnlich finden? Am besten notieren Sie sich vor der Untersuchung, was Sie beobachtet haben und worüber Sie mit Ihrer Ärztin oder Ihrem Arzt sprechen möchten." />
+				</extension>
+				<status value="final" />
+				<type>
+					<coding>
+						<system value="http://snomed.info/sct" />
+						<version value="http://snomed.info/sct/900000000000207008/version/20210131" />
+						<code value="401141001" />
+						<display value="Parental concern about child (finding)" />
+					</coding>
+				</type>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct" />
+						<version value="http://snomed.info/sct/900000000000207008/version/20210131" />
+						<code value="243788004" />
+						<display value="Child examination (procedure)" />
+					</coding>
+				</category>
+				<subject>
+					<reference value="urn:uuid:2cd11850-536d-4dca-8b7d-12f6c4fc204f" />
+				</subject>
+				<encounter>
+					<reference value="urn:uuid:579f353e-61a2-4c98-a03d-42e6849e879b" />
+				</encounter>
+				<date value="2019-09-15" />
+				<author>
+					<display value="Mutter Emma Glücklich" />
+				</author>
+				<title value="Hier können Sie Ihre Notizen eintragen:" />
+				<section>
+					<entry>
+						<reference value="urn:uuid:be304ab3-978b-42fa-a8df-f5d3a806cc39" />
+					</entry>
+				</section>
+			</Composition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:2cd11850-536d-4dca-8b7d-12f6c4fc204f" />
+		<resource>
+			<Patient>
+				<id value="2cd11850-536d-4dca-8b7d-12f6c4fc204f" />
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_CMR_Patient|1.0.1" />
+				</meta>
+				<identifier>
+					<type>
+						<coding>
+							<system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+							<code value="GKV" />
+							<display value="Gesetzliche Krankenversicherung" />
+						</coding>
+					</type>
+					<system value="http://fhir.de/NamingSystem/gkv/kvid-10" />
+					<value value="E123456789" />
+				</identifier>
+				<name>
+					<use value="official" />
+					<text value="Emilia Glücklich" />
+					<family value="Glücklich">
+						<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+							<valueString value="Glücklich" />
+						</extension>
+					</family>
+					<given value="Emilia" />
+				</name>
+				<birthDate value="2016-09-27" />
+			</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:be304ab3-978b-42fa-a8df-f5d3a806cc39" />
+		<resource>
+			<Observation>
+				<id value="be304ab3-978b-42fa-a8df-f5d3a806cc39" />
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_PN_Observation_Parental_Notes|1.0.1" />
+				</meta>
+				<status value="final" />
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct" />
+						<version value="http://snomed.info/sct/900000000000207008/version/20210131" />
+						<code value="401141001" />
+						<display value="Parental concern about child (finding)">
+							<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+								<extension url="content">
+									<valueString value="Hier können Sie Ihre Notizen eintragen:" />
+								</extension>
+							</extension>
+						</display>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:2cd11850-536d-4dca-8b7d-12f6c4fc204f" />
+				</subject>
+				<encounter>
+					<reference value="urn:uuid:579f353e-61a2-4c98-a03d-42e6849e879b" />
+				</encounter>
+				<effectiveDateTime value="2019-09-15" />
+				<valueString value="Das Kind ist sehr schläfrig." />
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:579f353e-61a2-4c98-a03d-42e6849e879b" />
+		<resource>
+			<Encounter>
+				<id value="579f353e-61a2-4c98-a03d-42e6849e879b" />
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_PN_Encounter|1.0.1" />
+				</meta>
+				<status value="finished" />
+				<class>
+					<system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+					<version value="2.0.0" />
+					<code value="AMB" />
+					<display value="ambulatory" />
+				</class>
+				<type>
+					<coding>
+						<system value="http://snomed.info/sct" />
+						<version value="http://snomed.info/sct/900000000000207008/version/20210131" />
+						<code value="170281004" />
+						<display value="Child 3 year examination (procedure)">
+							<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+								<extension url="content">
+									<valueString value="U7a" />
+								</extension>
+							</extension>
+						</display>
+					</coding>
+				</type>
+				<subject>
+					<reference value="urn:uuid:2cd11850-536d-4dca-8b7d-12f6c4fc204f" />
+				</subject>
+				<period>
+					<start value="2019-09-15" />
+				</period>
+			</Encounter>
+		</resource>
+	</entry>
+</Bundle>
